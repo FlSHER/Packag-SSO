@@ -8,6 +8,8 @@ class HomeController
 {
     public function index()
     {
-        return trans('package-sso::messages.success');
+    	// $dept = app('ssoService')->client()->getDepartmenets(212);
+    	dd(getSize(107374182142111, false));
+        return trans('sso::messages.success');
     }
 }
